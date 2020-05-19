@@ -1,0 +1,25 @@
+a[href^="http://"],
+a[href^="https://"] {
+    background: url(/images/external.svg) center right no-repeat;
+    background-size: 8px;
+    background-position-y: top;
+    padding-right: 10px;
+    color: $color-accent-1;
+}
+a.nolink {
+    background: none;
+}
+.content a.icon {
+  padding-right: 0;
+}
+
+@media (min-width: 480px)
+  .article-tag,
+  .article-category
+    display: block
+
+    &:before
+      content: ""
+  p
+    text-align: left
+
